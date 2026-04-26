@@ -1,0 +1,580 @@
+:root {
+  --bg: #f4efe7;
+  --surface: rgba(255, 250, 245, 0.78);
+  --surface-strong: #fff8f1;
+  --card: rgba(255, 255, 255, 0.88);
+  --ink: #161311;
+  --muted: #65584d;
+  --line: rgba(38, 25, 14, 0.12);
+  --gold: #cf8b2b;
+  --orange: #d85c2e;
+  --teal: #1d6d73;
+  --shadow: 0 24px 70px rgba(60, 34, 15, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Aptos, "Segoe UI", "Trebuchet MS", sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at top left, rgba(207, 139, 43, 0.24), transparent 28%),
+    radial-gradient(circle at 85% 15%, rgba(29, 109, 115, 0.18), transparent 26%),
+    linear-gradient(180deg, #f7f1e8 0%, #f0e6d8 45%, #f8f4ed 100%);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-shell {
+  width: min(1240px, calc(100% - 32px));
+  margin: 0 auto;
+  padding-bottom: 48px;
+}
+
+.topbar {
+  position: sticky;
+  top: 16px;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin: 18px 0 24px;
+  padding: 14px 18px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: rgba(255, 249, 242, 0.82);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 10px 30px rgba(55, 32, 13, 0.08);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-mark {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--orange), var(--gold));
+  color: #fff;
+  font-family: "Segoe UI Semibold", "Aptos Display", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.brand-text strong {
+  font-family: "Aptos Display", "Segoe UI Semibold", sans-serif;
+  font-size: 1rem;
+}
+
+.brand-text span {
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+.nav {
+  display: flex;
+  gap: 24px;
+  color: var(--muted);
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 20px;
+  border-radius: 999px;
+  font-weight: 700;
+  transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+.button-primary {
+  color: #fff;
+  background: linear-gradient(135deg, var(--orange), #b94218);
+  box-shadow: 0 16px 32px rgba(176, 77, 37, 0.28);
+}
+
+.button-secondary,
+.button-ghost {
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.65);
+}
+
+.hero,
+.split-layout,
+.cta-panel {
+  display: grid;
+  gap: 32px;
+}
+
+.hero {
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  min-height: calc(100vh - 130px);
+  padding: 32px 0 40px;
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  color: var(--teal);
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.76rem;
+}
+
+.hero h1,
+.section-heading h2,
+.cta-panel h2 {
+  margin: 0;
+  font-family: "Aptos Display", "Segoe UI Variable Display", "Trebuchet MS", sans-serif;
+  line-height: 0.96;
+}
+
+.hero h1 {
+  font-size: clamp(3.3rem, 7vw, 6.6rem);
+  max-width: 10ch;
+}
+
+.lead,
+.section-heading,
+.machine-card p,
+.benefit-card p,
+.industry-card p,
+.feature-list p,
+.cta-panel p,
+.contact-form label {
+  color: var(--muted);
+}
+
+.lead {
+  max-width: 58ch;
+  margin: 22px 0 0;
+  font-size: 1.06rem;
+  line-height: 1.7;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin: 28px 0 34px;
+}
+
+.stats-grid,
+.machine-grid,
+.benefits-grid,
+.industry-grid {
+  display: grid;
+  gap: 18px;
+}
+
+.stats-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.stats-grid article,
+.machine-card,
+.benefit-card,
+.industry-card,
+.dashboard-card,
+.cta-panel,
+.trust-band {
+  border: 1px solid var(--line);
+  background: var(--card);
+  box-shadow: var(--shadow);
+}
+
+.stats-grid article {
+  padding: 18px;
+  border-radius: 18px;
+}
+
+.stats-grid strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1.4rem;
+}
+
+.visual-panel {
+  position: relative;
+  border-radius: 28px;
+  padding: 28px;
+  background:
+    linear-gradient(160deg, rgba(26, 19, 14, 0.95), rgba(47, 31, 24, 0.92)),
+    linear-gradient(135deg, rgba(207, 139, 43, 0.22), rgba(29, 109, 115, 0.18));
+  box-shadow: 0 40px 80px rgba(28, 19, 13, 0.22);
+  overflow: hidden;
+}
+
+.visual-panel::after {
+  content: "";
+  position: absolute;
+  inset: auto -10% -18% auto;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(207, 139, 43, 0.22), transparent 68%);
+}
+
+.floating-card {
+  position: absolute;
+  max-width: 230px;
+  padding: 16px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  background: rgba(255, 248, 240, 0.92);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.16);
+}
+
+.top-card {
+  top: 8%;
+  right: 2%;
+}
+
+.bottom-card {
+  left: 0;
+  bottom: 10%;
+}
+
+.card-label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--orange);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.trust-band {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin: 10px 0 72px;
+  padding: 18px 24px;
+  border-radius: 18px;
+}
+
+.trust-band p {
+  margin: 0;
+  font-weight: 800;
+}
+
+.logo-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  color: var(--muted);
+}
+
+.logo-strip span {
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.section {
+  padding: 52px 0;
+}
+
+.section-heading {
+  max-width: 780px;
+  margin-bottom: 28px;
+}
+
+.section-heading h2,
+.cta-panel h2 {
+  font-size: clamp(2.1rem, 4vw, 4rem);
+  max-width: 12ch;
+}
+
+.machine-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.property-visuals-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.machine-card,
+.benefit-card,
+.industry-card,
+.visual-card {
+  padding: 22px;
+  border-radius: 24px;
+}
+
+.visual-card {
+  border: 1px solid var(--line);
+  background: var(--card);
+  box-shadow: var(--shadow);
+}
+
+.visual-card img {
+  width: 100%;
+  border-radius: 18px;
+  margin-bottom: 18px;
+}
+
+.machine-card h3,
+.benefit-card h3,
+.industry-card h3,
+.feature-list h3,
+.visual-card h3 {
+  margin: 18px 0 10px;
+  font-family: "Aptos Display", "Segoe UI Variable Display", "Trebuchet MS", sans-serif;
+  font-size: 1.45rem;
+}
+
+.visual-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.machine-card ul {
+  margin: 16px 0 0;
+  padding-left: 18px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.machine-card.feature {
+  transform: translateY(-16px);
+  background: linear-gradient(180deg, rgba(255, 250, 245, 0.98), rgba(250, 239, 226, 0.98));
+}
+
+.split-layout {
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+}
+
+.dashboard-card {
+  padding: 18px;
+  border-radius: 28px;
+}
+
+.feature-list {
+  display: grid;
+  gap: 18px;
+}
+
+.feature-list article {
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.feature-list article:last-child {
+  border-bottom: 0;
+}
+
+.benefits-grid,
+.industry-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.benefits-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.industry-card span {
+  color: var(--orange);
+  font-family: "Aptos Display", "Segoe UI Semibold", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.cta-panel {
+  grid-template-columns: 1fr 420px;
+  align-items: start;
+  padding: 28px;
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at top right, rgba(29, 109, 115, 0.16), transparent 28%),
+    linear-gradient(180deg, rgba(255, 248, 240, 0.98), rgba(250, 240, 231, 0.98));
+}
+
+.contact-form {
+  display: grid;
+  gap: 14px;
+}
+
+.contact-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 18px;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.contact-details a {
+  color: var(--teal);
+}
+
+.contact-form label {
+  display: grid;
+  gap: 8px;
+  font-size: 0.94rem;
+  font-weight: 700;
+}
+
+.contact-form input,
+.contact-form select {
+  width: 100%;
+  min-height: 50px;
+  padding: 0 16px;
+  border: 1px solid rgba(34, 21, 14, 0.14);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.88);
+  font: inherit;
+  color: var(--ink);
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin-top: 18px;
+  padding: 20px 4px 0;
+  color: var(--muted);
+}
+
+.footer p {
+  margin: 0;
+  color: var(--ink);
+  font-family: "Aptos Display", "Segoe UI Semibold", sans-serif;
+  font-weight: 700;
+}
+
+.footer span {
+  text-align: right;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 700ms ease, transform 700ms ease;
+}
+
+.reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 1080px) {
+  .hero,
+  .split-layout,
+  .cta-panel,
+  .machine-grid,
+  .property-visuals-grid,
+  .benefits-grid,
+  .industry-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero h1,
+  .section-heading h2,
+  .cta-panel h2 {
+    max-width: none;
+  }
+
+  .nav {
+    display: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .site-shell {
+    width: min(100% - 20px, 1000px);
+  }
+
+  .topbar {
+    top: 10px;
+    gap: 12px;
+    padding: 12px 14px;
+  }
+
+  .button-ghost {
+    display: none;
+  }
+
+  .hero,
+  .split-layout,
+  .cta-panel,
+  .machine-grid,
+  .property-visuals-grid,
+  .benefits-grid,
+  .industry-grid,
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: auto;
+    padding-top: 10px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.9rem, 14vw, 4.4rem);
+  }
+
+  .visual-panel {
+    padding: 18px;
+  }
+
+  .floating-card {
+    position: static;
+    max-width: none;
+    margin-top: 14px;
+  }
+
+  .trust-band {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .footer span {
+    text-align: left;
+  }
+}

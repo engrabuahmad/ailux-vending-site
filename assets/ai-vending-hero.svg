@@ -1,0 +1,53 @@
+<svg width="960" height="980" viewBox="0 0 960 980" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="960" height="980" rx="44" fill="url(#bg)"/>
+  <ellipse cx="505" cy="861" rx="280" ry="54" fill="#0D0A09" fill-opacity=".34"/>
+  <rect x="298" y="78" width="360" height="744" rx="42" fill="url(#cabinet)" stroke="#F1C892" stroke-opacity=".36" stroke-width="6"/>
+  <rect x="326" y="122" width="304" height="514" rx="28" fill="#121111" stroke="#63513C" stroke-width="3"/>
+  <rect x="346" y="144" width="264" height="474" rx="20" fill="url(#glass)"/>
+  <g opacity=".92">
+    <rect x="368" y="172" width="100" height="132" rx="18" fill="#F3A65F"/>
+    <rect x="488" y="172" width="100" height="132" rx="18" fill="#5AC2C9"/>
+    <rect x="368" y="322" width="100" height="132" rx="18" fill="#D6603A"/>
+    <rect x="488" y="322" width="100" height="132" rx="18" fill="#F5E4B8"/>
+    <rect x="368" y="472" width="220" height="114" rx="18" fill="#6E8D4B"/>
+  </g>
+  <rect x="326" y="660" width="304" height="118" rx="22" fill="#1B1614"/>
+  <rect x="352" y="688" width="176" height="64" rx="18" fill="#F9F1E6"/>
+  <rect x="544" y="688" width="58" height="64" rx="18" fill="#D65F34"/>
+  <circle cx="591" cy="720" r="8" fill="#FFF5E9"/>
+  <rect x="224" y="140" width="120" height="548" rx="24" fill="url(#sideGlow)" fill-opacity=".78"/>
+  <rect x="616" y="188" width="104" height="456" rx="24" fill="url(#screen)" stroke="#F1C892" stroke-opacity=".32"/>
+  <rect x="644" y="232" width="48" height="48" rx="14" fill="#F5A259"/>
+  <rect x="644" y="302" width="48" height="48" rx="14" fill="#5AC2C9"/>
+  <rect x="644" y="372" width="48" height="48" rx="14" fill="#86B85C"/>
+  <rect x="644" y="460" width="48" height="124" rx="18" fill="#FFF1DB"/>
+  <path d="M205 234C205 191.4 239.4 157 282 157H306V671H282C239.4 671 205 636.6 205 594V234Z" fill="#161212"/>
+  <circle cx="275" cy="258" r="18" fill="#D65F34"/>
+  <circle cx="275" cy="316" r="18" fill="#F1C892"/>
+  <circle cx="275" cy="374" r="18" fill="#5AC2C9"/>
+  <defs>
+    <linearGradient id="bg" x1="85" y1="50" x2="849" y2="920" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3F2B1E"/>
+      <stop offset=".52" stop-color="#221915"/>
+      <stop offset="1" stop-color="#120F0E"/>
+    </linearGradient>
+    <linearGradient id="cabinet" x1="478" y1="78" x2="478" y2="822" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#47362A"/>
+      <stop offset=".48" stop-color="#2A221D"/>
+      <stop offset="1" stop-color="#161311"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="343" y1="141" x2="625" y2="621" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#121A22"/>
+      <stop offset=".56" stop-color="#1E2930"/>
+      <stop offset="1" stop-color="#0D1319"/>
+    </linearGradient>
+    <linearGradient id="sideGlow" x1="284" y1="140" x2="284" y2="688" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F3B467"/>
+      <stop offset="1" stop-color="#D65F34"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="668" y1="188" x2="668" y2="644" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2D2A29"/>
+      <stop offset="1" stop-color="#151312"/>
+    </linearGradient>
+  </defs>
+</svg>

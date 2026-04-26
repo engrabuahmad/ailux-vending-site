@@ -1,0 +1,71 @@
+<svg width="1400" height="980" viewBox="0 0 1400 980" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1400" height="980" rx="44" fill="url(#bg)"/>
+  <rect x="78" y="78" width="1244" height="824" rx="34" fill="#FBF5EE"/>
+  <rect x="112" y="112" width="1176" height="756" rx="28" fill="url(#room)"/>
+  <path d="M112 660H1288V868H112V660Z" fill="url(#floor)"/>
+  <path d="M564 112H846V660H564V112Z" fill="url(#windowGlow)"/>
+  <path d="M592 112H818V660H592V112Z" fill="url(#windowCore)"/>
+  <rect x="162" y="194" width="268" height="314" rx="28" fill="#EFE4D7"/>
+  <rect x="970" y="208" width="252" height="280" rx="28" fill="#F3E8DB"/>
+  <rect x="204" y="518" width="164" height="122" rx="32" fill="#D8AB77"/>
+  <rect x="186" y="486" width="204" height="64" rx="32" fill="#E8BE8A"/>
+  <rect x="994" y="504" width="186" height="136" rx="36" fill="#C98B57"/>
+  <rect x="976" y="474" width="220" height="68" rx="34" fill="#DDA06A"/>
+  <ellipse cx="1074" cy="770" rx="176" ry="44" fill="#DCC6B2"/>
+  <rect x="920" y="626" width="308" height="126" rx="28" fill="#F9F1E6"/>
+  <rect x="948" y="652" width="132" height="20" rx="10" fill="#DDA06A"/>
+  <rect x="948" y="690" width="232" height="18" rx="9" fill="#D4C0AE"/>
+  <rect x="948" y="722" width="176" height="18" rx="9" fill="#D4C0AE"/>
+  <ellipse cx="694" cy="798" rx="214" ry="58" fill="#D8C2AD"/>
+  <g filter="url(#shadow)">
+    <rect x="560" y="270" width="264" height="424" rx="34" fill="#191513"/>
+    <rect x="584" y="300" width="214" height="262" rx="24" fill="#24323A"/>
+    <rect x="604" y="322" width="78" height="92" rx="14" fill="#F2A55D"/>
+    <rect x="700" y="322" width="78" height="92" rx="14" fill="#62BEC2"/>
+    <rect x="604" y="430" width="174" height="110" rx="16" fill="#F3E8D7"/>
+    <rect x="584" y="580" width="214" height="82" rx="20" fill="#FCF6EE"/>
+    <rect x="828" y="326" width="34" height="230" rx="16" fill="#D95F37"/>
+  </g>
+  <rect x="168" y="184" width="142" height="20" rx="10" fill="#D0B89F"/>
+  <rect x="168" y="220" width="186" height="16" rx="8" fill="#DCC7B2"/>
+  <rect x="976" y="198" width="118" height="18" rx="9" fill="#D0B89F"/>
+  <rect x="976" y="232" width="166" height="14" rx="7" fill="#DCC7B2"/>
+  <circle cx="228" cy="760" r="64" fill="#E5D4C0"/>
+  <path d="M228 706C256.719 706 280 729.281 280 758V814H176V758C176 729.281 199.281 706 228 706Z" fill="#2E6D74"/>
+  <circle cx="228" cy="682" r="32" fill="#D6B396"/>
+  <circle cx="1180" cy="778" r="58" fill="#E0CFBC"/>
+  <path d="M1180 728C1206.51 728 1228 749.49 1228 776V822H1132V776C1132 749.49 1153.49 728 1180 728Z" fill="#CF8B2B"/>
+  <circle cx="1180" cy="704" r="29" fill="#D7B699"/>
+  <defs>
+    <linearGradient id="bg" x1="46" y1="32" x2="1306" y2="932" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E7A15F"/>
+      <stop offset=".52" stop-color="#D7C1A5"/>
+      <stop offset="1" stop-color="#A8C9CB"/>
+    </linearGradient>
+    <linearGradient id="room" x1="700" y1="112" x2="700" y2="868" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF8F1"/>
+      <stop offset="1" stop-color="#F4EADE"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="700" y1="660" x2="700" y2="868" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E7D1BE"/>
+      <stop offset="1" stop-color="#D9B99E"/>
+    </linearGradient>
+    <linearGradient id="windowGlow" x1="705" y1="112" x2="705" y2="660" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EAF8FA"/>
+      <stop offset="1" stop-color="#B9DBDE"/>
+    </linearGradient>
+    <linearGradient id="windowCore" x1="705" y1="112" x2="705" y2="660" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF4E8"/>
+      <stop offset="1" stop-color="#E4F3F4"/>
+    </linearGradient>
+    <filter id="shadow" x="516" y="242" width="390" height="524" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dx="18" dy="22"/>
+      <feGaussianBlur stdDeviation="22"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.110756 0 0 0 0 0.0718682 0 0 0 0 0.0466467 0 0 0 0.22 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+    </filter>
+  </defs>
+</svg>
