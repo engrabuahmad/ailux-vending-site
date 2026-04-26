@@ -147,12 +147,11 @@ a {
 
 .hero {
   position: relative;
-  grid-template-columns: 1.05fr 0.95fr;
-  align-items: center;
+  display: block;
   min-height: calc(100vh - 130px);
-  padding: 52px 0 48px;
+  padding: 72px 0 64px;
   overflow: hidden;
-  border-radius: 48px;
+  border-radius: 0;
 }
 
 .hero-backdrop {
@@ -174,18 +173,19 @@ a {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(28, 21, 17, 0.84) 0%, rgba(28, 21, 17, 0.7) 34%, rgba(28, 21, 17, 0.34) 58%, rgba(28, 21, 17, 0.18) 100%),
-    linear-gradient(180deg, rgba(206, 139, 58, 0.28), rgba(28, 21, 17, 0.18));
+    linear-gradient(90deg, rgba(28, 21, 17, 0.84) 0%, rgba(28, 21, 17, 0.7) 30%, rgba(28, 21, 17, 0.36) 56%, rgba(28, 21, 17, 0.22) 76%, rgba(28, 21, 17, 0.16) 100%),
+    linear-gradient(180deg, rgba(206, 139, 58, 0.2), rgba(28, 21, 17, 0.12));
 }
 
 .hero-copy,
-.hero-visual {
+.hero-note {
   position: relative;
   z-index: 1;
 }
 
 .hero-copy {
-  padding: 48px 0 48px 52px;
+  width: min(720px, calc(100% - 120px));
+  padding: 72px 0 0 72px;
 }
 
 .eyebrow {
@@ -288,6 +288,13 @@ a {
   border-color: rgba(255, 242, 227, 0.18);
   backdrop-filter: blur(10px);
   box-shadow: none;
+}
+
+.hero-note {
+  position: absolute;
+  right: 56px;
+  bottom: 44px;
+  max-width: 280px;
 }
 
 .stats-grid strong {
@@ -719,7 +726,6 @@ a {
 }
 
 @media (max-width: 1080px) {
-  .hero,
   .split-layout,
   .cta-panel,
   .machine-grid,
@@ -736,6 +742,7 @@ a {
   }
 
   .hero-copy {
+    width: min(680px, calc(100% - 72px));
     padding-left: 36px;
   }
 
@@ -759,7 +766,6 @@ a {
     display: none;
   }
 
-  .hero,
   .split-layout,
   .cta-panel,
   .machine-grid,
@@ -772,8 +778,7 @@ a {
 
   .hero {
     min-height: auto;
-    padding-top: 18px;
-    border-radius: 30px;
+    padding: 28px 0 42px;
   }
 
   .hero h1 {
@@ -781,7 +786,8 @@ a {
   }
 
   .hero-copy {
-    padding: 26px 22px 0;
+    width: calc(100% - 36px);
+    padding: 26px 18px 0;
   }
 
   .hero-backdrop::after {
@@ -790,18 +796,14 @@ a {
       linear-gradient(180deg, rgba(206, 139, 58, 0.24), rgba(28, 21, 17, 0.18));
   }
 
-  .visual-panel {
-    padding: 18px;
-  }
-
-  .product-panel {
-    min-height: 520px;
-  }
-
   .floating-card {
     position: static;
     max-width: none;
     margin-top: 14px;
+  }
+
+  .hero-note {
+    margin: 24px 18px 0;
   }
 
   .trust-band {
